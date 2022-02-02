@@ -19,7 +19,7 @@ label2 = Label(root, text='Заполнив анкету, вы сможете п
                           ' электронной библиотекой', font='Arial 12')
 label2.place(x=10, y=60)
 
-label3 = Label(root, text='Введите регистрационное имя:',font='Arial 12')
+label3 = Label(root, text='Введите регистрационное имя:', font='Arial 12')
 label3.place(x=10, y=100)
 text1 = Text(root, height=1, width=25, font='Arial 12')
 text1.place(x=250, y=100)
