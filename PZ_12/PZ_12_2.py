@@ -10,10 +10,7 @@ def triangle(event):
     n2 = int(num2.get())
     n3 = int(num3.get())
 
-    if n1 == n2 or n1 == n3 or n2 == n3:
-        t = t + 1
-    else:
-        t = 0
+    t = t + 1 if n1 == n2 or n1 == n3 or n2 == n3 else t
 
     if t == 1:
         positive['text'] = " Треугольник равнобедренный "
