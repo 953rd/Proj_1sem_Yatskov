@@ -2,9 +2,9 @@ import tkinter
 from tkinter import *
 from tkinter import ttk
 
+
 def triangle(event):
     t = 0
-    r: int = 0
 
     n1 = int(num1.get())
     n2 = int(num2.get())
@@ -16,9 +16,9 @@ def triangle(event):
         t = 0
 
     if t == 1:
-        positive['text'] = "Треугольник равнобедренный"
+        positive['text'] = " Треугольник равнобедренный "
     else:
-        negative['text'] = "Треугольник неравнобедренный"
+        negative['text'] = " Треугольник неравнобедренный "
 
 
 root = Tk()
