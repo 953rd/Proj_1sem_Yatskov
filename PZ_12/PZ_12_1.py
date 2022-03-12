@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import tkinter
 from tkinter import *
 from tkinter import ttk
@@ -78,7 +77,7 @@ button1 = Button(root, text='OK', width=3, height=1, font='Arial 12')
 button1.place(x=10, y=475)
 button2 = Button(root, text='Отменить', width=7, height=1, font='Arial 12')
 button2.place(x=60, y=475)
-=======
+
 import tkinter
 from tkinter import *
 from tkinter import ttk
@@ -158,5 +157,4 @@ button1 = Button(root, text='OK', width=3, height=1, font='Arial 12')
 button1.place(x=10, y=475)
 button2 = Button(root, text='Отменить', width=7, height=1, font='Arial 12')
 button2.place(x=60, y=475)
->>>>>>> origin/master
 root.mainloop()
