@@ -13,4 +13,4 @@ for i in fs:
         if i == d:
             ps.append(i)
 print(fs)
-print(ps)
+print(" ".join(ps))
