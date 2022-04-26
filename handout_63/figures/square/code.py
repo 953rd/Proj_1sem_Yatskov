@@ -17,5 +17,5 @@ def square_area(d_a=15):
         except ValueError:
             a = d_a
     s = a**2
-    print("Площадь квадрата = ", s)
+    print("Площадь квадрата = ", round(s, 2))
     

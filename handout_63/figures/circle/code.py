@@ -19,4 +19,4 @@ def circle_area(d_r=5):
             a = d_r
     pi = 3.14
     s = pi*a**2
-    print("Площадь окружности: ", s)
+    print("Площадь окружности: ", round(s, 2))
