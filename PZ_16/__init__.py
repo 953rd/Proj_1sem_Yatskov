@@ -83,15 +83,9 @@ class Main(tk.Frame):
         self.db.con.commit()
         self.view_records()
 
-    # def search_records(self, user_id):
-    #     user_id = ("%" + user_id + "%",)
-    #     self.db.cur.execute("""SELECT * FROM users WHERE name LIKE ?""", user_id)
-    #     [self.tree.delete(i) for i in self.tree.get_children()]
-    #     [self.tree.insert('', 'end', values=row) for row in self.db.cur.fetchall()]
-
-    def search_name_t(self, name_t):
-        name_t = (name_t,)
-        self.db.cur.execute("""SELECT * FROM base WHERE name_t=?""", name_t)
+    def search_name_t(self, user_id):
+        user_id = ("%" + user_id + "%",)
+        self.db.cur.execute("""SELECT * FROM base WHERE name_t LIKE ?""", user_id)
         [self.tree.delete(i) for i in self.tree.get_children()]
         [self.tree.insert('', 'end', values=row) for row in self.db.cur.fetchall()]
 
@@ -197,14 +191,14 @@ class Search(tk.Toplevel):
 
     def init_search(self):
         self.title("Поиск")
-        self.geometry("300x100+400+300")
+        self.geometry("400x100+400+300")
         self.resizable(False, False)
 
-        label_search = tk.Label(self, text="Поиск")
+        label_search = tk.Label(self, text="Поиск по названию")
         label_search.place(x=50, y=20)
 
         self.entry_search = ttk.Entry(self)
-        self.entry_search.place(x=105, y=20, width=150)
+        self.entry_search.place(x=175, y=20, width=150)
 
         btn_cancel = ttk.Button(self, text="Закрыть", command=self.destroy)
         btn_cancel.place(x=185, y=50)
